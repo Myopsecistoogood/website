@@ -19,9 +19,15 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
         .error {
             color: red;
-            margin-top: 20px;
+        }
+        .success {
+            color: green;
         }
     </style>
 </head>
@@ -30,20 +36,28 @@
     <p>Bitte geben Sie Ihren Versandcode ein:</p>
     <input type="text" id="trackingCode" placeholder="Versandcode eingeben">
     <button onclick="checkTrackingCode()">Senden</button>
-    <p class="error" id="errorMessage" style="display: none;">Ungültiger Versandcode!</p>
+
+    <!-- Nachrichtenbereich -->
+    <div class="message" id="message"></div>
 
     <script>
         function checkTrackingCode() {
             const correctCode = "HIUJH23IENAS1"; // Der richtige Versandcode
             const userCode = document.getElementById("trackingCode").value.trim(); // Benutzereingabe
-            const errorMessage = document.getElementById("errorMessage");
+            const messageDiv = document.getElementById("message");
+
+            // Zurücksetzen der Nachricht
+            messageDiv.innerHTML = "";
+            messageDiv.className = "message";
 
             if (userCode === correctCode) {
-                // Weiterleitung zur Erfolgsseite
-                window.location.href = "success.html"; // Ersetze mit der gewünschten Zielseite
+                // Erfolgsmeldung anzeigen
+                messageDiv.innerHTML = "Ihre Bestellung ist in Bearbeitung.";
+                messageDiv.classList.add("success");
             } else {
                 // Fehlermeldung anzeigen
-                errorMessage.style.display = "block";
+                messageDiv.innerHTML = "Ungültiger Versandcode!";
+                messageDiv.classList.add("error");
             }
         }
     </script>
