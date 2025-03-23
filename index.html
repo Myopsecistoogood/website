@@ -3,17 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Packet Versand Tracking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Simple Webpage</h1>
-    <p>This is a basic example of an HTML page.</p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-    <p>Thank you for visiting!</p>
+    <h1>Packet Versand Tracking</h1>
+    <p>Bitte geben Sie Ihren Versandcode ein:</p>
+    <input type="text" id="trackingCode" placeholder="Versandcode eingeben">
+    <button onclick="checkTrackingCode()">Senden</button>
+    <p class="error" id="errorMessage" style="display: none;">Ungültiger Versandcode!</p>
+
+    <script>
+        function checkTrackingCode() {
+            const correctCode = "HIUJH23IENAS1"; // Der richtige Versandcode
+            const userCode = document.getElementById("trackingCode").value.trim(); // Benutzereingabe
+            const errorMessage = document.getElementById("errorMessage");
+
+            if (userCode === correctCode) {
+                // Weiterleitung zur Erfolgsseite
+                window.location.href = "success.html"; // Ersetze mit der gewünschten Zielseite
+            } else {
+                // Fehlermeldung anzeigen
+                errorMessage.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
-
