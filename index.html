@@ -1,147 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FREE JOHN PORK 🐷 | #PorkVsCheese WAR</title>
-    <style>
-        /* WAR PROPAGANDA STYLES */
-        body {
-            font-family: 'Impact', sans-serif;
-            background-color: #ffcccc;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            color: #8b0000;
-        }
-
-        header {
-            background: linear-gradient(45deg, #ff0000, #ff6b6b);
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            border-bottom: 5px solid black;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 3em;
-            text-shadow: 3px 3px 0 #000;
-            color: white;
-            letter-spacing: 2px;
-        }
-
-        .war-banner {
-            background: black;
-            color: gold;
-            padding: 10px;
-            font-size: 1.5em;
-            text-transform: uppercase;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero-img {
-            width: 300px;
-            border: 10px solid gold;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-            margin: 20px 0;
-        }
-
-        .enemy-img {
-            width: 200px;
-            border: 5px dashed #8b0000;
-            filter: grayscale(50%) contrast(120%);
-            opacity: 0.8;
-            margin: 10px 0;
-        }
-
-        .join-button {
-            background: linear-gradient(45deg, #8b0000, #ff0000);
-            color: white;
-            border: none;
-            padding: 15px 40px;
-            font-size: 1.5em;
-            border-radius: 0;
-            cursor: pointer;
-            margin: 20px 0;
-            box-shadow: 0 5px 0 #600000;
-            text-transform: uppercase;
-            transition: transform 0.2s;
-            font-family: 'Impact', sans-serif;
-        }
-
-        .join-button:hover {
-            transform: scale(1.1);
-            background: linear-gradient(45deg, #ff0000, #8b0000);
-        }
-
-        .propaganda {
-            background: white;
-            border-left: 5px solid red;
-            padding: 15px;
-            margin: 20px 0;
-            text-align: left;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        footer {
-            background: black;
-            color: white;
-            padding: 10px;
-            font-size: 0.8em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>FREE JOHN PORK</h1>
-        <p>HE IS A PRISONER OF THE CHEESE REGIME</p>
-    </header>
 
-    <div class="war-banner">
-        🚨 TIM CHEESE HAS DECLARED WAR. WILL YOU FIGHT FOR PORK? 🚨
-    </div>
+<div class="bg-animated"></div>
 
-    <div class="container">
-        <h2>THE GREAT PORK VS. CHEESE WAR</h2>
-        <p>John Pork (🐷) was once a free meme. Now, <strong>Tim Cheese</strong> (🧀) holds him captive in a Swiss bunker.</p>
+<div class="container" id="card">
+  <div class="title">Heox</div>
+  <hr>
 
-        <!-- WORKING JOHN PORK IMAGE -->
-        <img src="https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg" alt="John Pork" class="hero-img">
-        <p><em>"They took me because I knew too much." — John Pork</em></p>
+  <div><small>Telegram: <a href="https://t.me/Heoxclient" style="color: #1ac4f8;" target="_blank">@Heoxclient</a></small></div>
 
-        <div class="propaganda">
-            <h3>CHEESE REGIME CRIMES:</h3>
-            <ul>
-                <li>🧀 Forces schools to serve "grilled cheese only" lunches.</li>
-                <li>🧀 Hides John Pork in a vault of expired dairy.</li>
-                <li>🧀 Spreads lies like "Pork is just spam calls."</li>
-            </ul>
+  <div class="links-container">
+    <a class="button" id="links-discord" href="https://discord.com/users/user" target="_blank">
+      <img src="images/e462aaa20cff188606d0a142e0903b34.png" alt="avatar" class="discord-avatar">
+      <div>
+        <h2 align="left" class="font-semibold break-all" style="color: rgb(255, 255, 255);">ID: Heox1337 / 1334246712708956172</h2>
+        <h3></h3>
+      </div>
+    </a>
+
+    <div class="links-container">
+      <a class="button" id="links-discord" href="https://vacban.wtf/members/119984/" target="_blank">
+        <img src="images/Untitled.jpg" alt="avatar" class="discord-avatar">
+        <div>
+          <h2 align="left" class="font-semibold break-all" style="color: rgb(255, 255, 255);">Vacban</h2>
+          <h3></h3>
         </div>
+      </a>
 
-        <h3>THE TYRANT:</h3>
-        <!-- TIM CHEESE IMAGE (PLACEHOLDER) -->
-        <img src="https://i.imgur.com/4uZQy1K.jpg" alt="Tim Cheese" class="enemy-img" onerror="this.src='https://i.imgur.com/4uZQy1K.jpg'; this.alt='Tim Cheese (Image Failed)';">
-        <p><strong>Tim Cheese</strong> (Public Enemy #1)</p>
+  <div class="banner-box">
+    <img src="images/banner.gif" alt="banner">
+  </div>
 
-        <button class="join-button" onclick="alert('🚨 YOU HAVE JOINED THE PORK RESISTANCE! JOHN PORK WILL REMEMBER THIS. 🐷⚔️')">
-            ENLIST IN THE PORK ARMY
-        </button>
-
-        <h3>DEMAND JUSTICE:</h3>
-        <p>Call the Cheese Hotline and demand John Pork's release: <strong>1-800-NOT-CHEESE</strong></p>
+  <div class="music-player">
+    <div class="song-info">
+      <div class="song-title">song name : Chastushka - slowed | Save Europe </div>
     </div>
 
-    <footer>
-        &copy; 2023 - PORK RESISTANCE MOVEMENT | #PorkGang | Not a real war (probably).
-    </footer>
+    <div class="player-controls">
+      <button class="player-btn">⏮</button>
+      <button class="player-btn play-btn" id="playBtn">▶</button>
+      <button class="player-btn">⏭</button>
+    </div>
+
+    <div class="progress-container" id="progressContainer">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="time-info">
+      <span id="currentTime">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="player-bottom">
+      <div class="volume-control">
+        <button class="volume-btn" id="volumeBtn">🔈</button>
+        <input type="range" min="0" max="1" step="0.01" value="0.3" class="volume-slider" id="volumeSlider">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="overlay" class="overlay">
+  <div class="overlay-text">tap anywhere to continue</div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
